@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech App - Transaksi</title>
+  </head>
+  <body>
+    <h1>Fintech Trx Management</h1>
+
+    <!-- Task 1 - Create a simple login form  -->
+    <div id="login-form">
+      <label for="username">Enter Username:</label>
+      <input type="text" id="username" />
+      <button id="login-btn">Login</button>
+    </div>
+    <div id="greeting"></div>
+
+    <section id="trx_section" style="display: none">
+      <h2>Daftar Transaksi</h2>
+      <ul id="transaction-list">
+        <!-- Task 3: Display the list of transactions stored in localStorage here-->
+      </ul>
+
+      <!--- Task 2: Create a form to add new transactions-->
+      <div id="transaction-form">
+        <label for="amount">Transaction Amount: </label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <button id="add-transaction-btn">Add Transaction</button>
+      </div>
+
+      <!-- Task 4: Create a logout button to clear session storage -->
+      <button id="logout-btn">Logout</button>
+    </section>
+    <script src="script.js">
+      // Task 1: Handle user login and save the username in session storage
+      // Task 2: Handle adding new transactions to localStorage
+      // Task 3: Display the list of transactions from localStorage when the page is loaded
+      // Task 4: Handle user logout, clear session storage, and reload the page
+    </script>
+  </body>
+</html>
